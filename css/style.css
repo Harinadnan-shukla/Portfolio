@@ -10,8 +10,9 @@
 ======================================*/
 
 body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
+  background: rgb(1,32,4);
+background: linear-gradient(340deg, rgba(1,32,4,1) 0%, rgba(25,0,0,1) 38%, rgba(2,26,31,1) 68%, rgba(1,8,20,1) 73%, rgba(15,1,13,1) 80%, rgba(46,17,1,1) 89%); 
+  color:white;
 }
 
 h1,
@@ -20,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: #09dbe2;
 }
 
 a {
@@ -84,9 +85,10 @@ a:hover {
 
 .bg-image {
   background-repeat: no-repeat;
+ background-size: 80%;
   background-attachment: fixed;
-  background-size: cover;
   background-position: center center;
+  
 }
 
 .overlay-mf {
@@ -137,7 +139,7 @@ a:hover {
 
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: #09dbe2;
   font-size: 1.1rem;
 }
 
@@ -193,7 +195,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+ 
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -623,14 +625,18 @@ a:hover {
 }
 
 .intro .intro-title {
-  color: #fff;
-  font-weight: 600;
+  color:white;
+  font-family: 'Merienda', cursive;
   font-size: 3rem;
+  background: -webkit-linear-gradient( black, #09dbe2);
+  -webkit-background-clip: text;
+ 
+  -webkit-text-fill-color: transparent;
 }
 
 .intro .intro-subtitle {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 300;color: white;
 }
 
 .intro .text-slider-items {
@@ -705,7 +711,7 @@ a:hover {
 ======================================*/
 
 .service-box {
-  background-color: #fff;
+ 
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -1260,7 +1266,9 @@ footer .credits a {
 
 @media (max-width: 1024px) {
   .bg-image {
-    background-attachment: scroll;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
 
